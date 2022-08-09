@@ -1,3 +1,5 @@
-const hello = (name: string) => `Hello, ${name}!`;
+import { primeFactorize } from "./primeFactorize";
 
-console.log(hello("TypeScript"));
+const divisors = primeFactorize(12);
+
+console.log(divisors);

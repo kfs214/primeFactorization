@@ -10,5 +10,16 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["@typescript-eslint"],
-  rules: {},
+  rules: {
+    "import/prefer-default-export": 0,
+    "no-unused-vars": ["error", { args: "after-used" }],
+    "import/extensions": ["error", "never"],
+  },
+  settings: {
+    "import/resolver": {
+      node: {
+        extensions: [".ts"],
+      },
+    },
+  },
 };
